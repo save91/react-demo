@@ -12,7 +12,7 @@ class App extends React.Component {
             <div>
                 <Header />
                 <hr />
-                <Categories />
+                <Categories handleSelect={(id) => console.log('Category:', id)}/>
                 <hr />
                 <ProductsTable />
                 <hr />
