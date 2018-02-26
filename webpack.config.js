@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        app: './src/App.jsx'
+        app: './src/app/App.jsx'
     },
     mode: 'development',
     devtool: 'inline-source-map',
