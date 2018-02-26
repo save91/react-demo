@@ -1,0 +1,44 @@
+// Main
+
+// Content:
+// - Mediaquery
+// - Partials
+
+
+
+// Mediaquery
+$smartphone:480px;
+$tablet-portrait:640px;
+$tablet:768px;
+$desktop:1024px;
+
+@mixin smartphone {
+  @media (min-width: 0) and (max-width: #{$smartphone}) {
+    @content;
+  }
+}
+@mixin tablet-portrait {
+  @media (min-width: 0) and (max-width: #{$tablet-portrait}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 0) and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 0) and (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+
+// Partials
+@import "~normalize.css/normalize.css";
+@import "./tools";
+@import "./palette";
+@import "./typography";
+@import "./layout";
+@import "./atoms";
